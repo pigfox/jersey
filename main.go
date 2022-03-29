@@ -16,10 +16,10 @@ func main() {
 	}
 
 	percent := 0.0
-	for k, v := range jerseys {
-		if k == 99 || k == 10 {
-			percent = (float64(v) / float64(plays)) * 100
-			fmt.Println("#" + strconv.Itoa(k) + " gets " + fmt.Sprintf("%f", percent) + "%")
+	for jerseyNumber, selectedNumTimes := range jerseys {
+		if jerseyNumber == 99 || jerseyNumber == 10 {
+			percent = (float64(selectedNumTimes) / float64(plays)) * 100
+			fmt.Println("#" + strconv.Itoa(jerseyNumber) + " gets " + fmt.Sprintf("%f", percent) + "%")
 		}
 	}
 }
