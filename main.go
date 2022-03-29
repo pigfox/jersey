@@ -11,8 +11,8 @@ func main() {
 	jerseys := make(map[int]int)
 
 	for i := 0; i < plays; i++ {
-		num := rand.Intn(100)
-		jerseys[num]++
+		jerseyNumber := rand.Intn(100)
+		jerseys[jerseyNumber]++
 	}
 
 	percent := 0.0
